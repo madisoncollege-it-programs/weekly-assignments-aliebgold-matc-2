@@ -14,8 +14,8 @@ print (f'Answer: Hello {varName}\n')
 print ('Question: Red-blue-Green')
 print(f'Answer: {varRed}-{varGreen}-{varBlue}\n')
 
-print('Question: Is this Green or Blue')
-print(f'Answer: Is this {varGreen} or {varBlue}\n')
+print('Question: Is this green or blue')
+print(f'Answer: Is this {varGreen.lower()} or {varBlue.lower()}\n')
 
 print('Question: My name is Aaron')
 print(f'Answer: My name is {varName.upper()}\n')
