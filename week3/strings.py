@@ -18,7 +18,7 @@ print('Question: Is this Green or Blue')
 print(f'Answer: Is this {varGreen} or {varBlue}\n')
 
 print('Question: My name is Aaron')
-print(f'Answer: My name is {varName}\n')
+print(f'Answer: My name is {varName.upper()}\n')
 
 print('Question: ++Red++')
 print(f'Answer: {varRed:+^7}\n')
