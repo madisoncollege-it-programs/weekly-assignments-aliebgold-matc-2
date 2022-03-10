@@ -31,10 +31,10 @@ while password_database:
 
             break
         if SignIn != "dnedry":
-            print(MagicWord * 25)
+            print(f'\n MagicWord ' * 25)
 
         if password != "please":
-            print(MagicWord * 25)
+            print(f'\n MagicWord' * 25)
 
 
 
