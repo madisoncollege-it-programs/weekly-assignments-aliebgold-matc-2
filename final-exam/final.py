@@ -8,7 +8,7 @@ import socket
 
 parser = argparse.ArgumentParser(description="Final")
 parser.add_argument('-f', '--function', dest='function',type=int,metavar="[what funtion]", required=True, help="<required> Enter a simple Integer")
-parser.add_argument('-i', '--ipaddress', dest='ip', type=str,metavar="[Enter this 172.31.29.252]", required=True, help="Enter an IP address")
+parser.add_argument('-i', '--ipaddress', dest='ip', type=str,metavar="[Enter this IP Address 172.31.29.252]", required=True, help="Enter an IP address")
 
 args = parser.parse_args()
 
@@ -75,7 +75,7 @@ def socket_client():
     for port in range(5000,6000):
 
         try:
-            C_SOCK.connect((ipVar, port))
+            C_SOCK.connect((ip, port))
             #list.append(port)
             C_SOCK.send(bytearray(SND_DATA, "utf8"))
             RCV_DATA = C_SOCK.recv(1024)
@@ -83,6 +83,7 @@ def socket_client():
 
         except:
             pass
+
 
 if args.function == 1:
     get_response()
